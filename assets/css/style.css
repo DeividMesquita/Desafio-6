@@ -59,7 +59,7 @@ main {
     background: url(/assets/img/monitor\ da\ bancada\ topo.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 915px;
 }
 
 .l-breadcrumb__lista {
@@ -100,19 +100,29 @@ main {
     color: var(--text-selected);
 }
 
+.l-banner__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 915px;
+}
+
 .l-banner__informacao {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
-    margin-top: 3.125rem;
+    margin-bottom: 95px;
+    width: 32.75rem;
 }
 
 .l-banner__descricao p {    
     font-size: 1.125rem;
     line-height: 1.25rem;
     color: var(--default-white);
+    text-align: center;
 }
 
 .l-banner__atualizado p {
