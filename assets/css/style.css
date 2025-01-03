@@ -1,0 +1,135 @@
+:root {
+    --header-black: #1E1E1E;
+    --primary-blue: #090B30;
+    --text-selected: #999999;
+    --default-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", serif;
+}
+
+main {
+    background-color: var(--primary-blue);
+}
+
+/* Header */
+
+.c-header {
+    background-color: var(--header-black);
+}
+
+.l-header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.375rem;
+}
+
+.l-header__lista ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.c-header__pesquisa img {
+    width: 1.125rem;
+    height: 1.25rem;
+}
+
+.c-header__perfil img{
+    width: 1.25rem;
+}
+
+.c-header__notificaçao img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* IMAGEM TOPO */
+
+.c-img-top {
+    background: url(/assets/img/monitor\ da\ bancada\ topo.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.l-breadcrumb__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-breadcrumb__lista ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 0.3125rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.l-breadcrumb__lista li {
+    display: flex;
+    gap: 0.3125rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-breadcrumb__lista a{
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+.l-breadcrumb__lista p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    color: var(--text-selected);
+}
+
+.l-banner__informacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 3.125rem;
+}
+
+.l-banner__descricao p {    
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    color: var(--default-white);
+}
+
+.l-banner__atualizado p {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    color: var(--text-selected);
+}
+
+.l-banner__sociais ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 0.625rem;
+}
+
+.l-banner__sociais img {
+    width: 2.1875rem;
+}
