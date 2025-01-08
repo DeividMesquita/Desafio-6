@@ -1,6 +1,7 @@
 :root {
     --header-black: #1E1E1E;
     --primary-blue: #090B30;
+    --secundary-orange: #FC7300;
     --text-selected: #999999;
     --default-white: #FFFFFF;
 }
@@ -29,7 +30,21 @@ main {
     height: 4.375rem;
 }
 
-.l-header__lista ul{
+.l-header__logo a{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 1.5625rem;
+    margin: 0 auto;
+    width: 2.3125rem;
+}
+
+.l-header__logo a :hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.l-header__lista ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,7 +59,7 @@ main {
     height: 1.25rem;
 }
 
-.c-header__perfil img{
+.c-header__perfil img {
     width: 1.25rem;
 }
 
@@ -86,7 +101,7 @@ main {
     align-items: center;
 }
 
-.l-breadcrumb__lista a{
+.l-breadcrumb__lista a {
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.25rem;
@@ -118,7 +133,7 @@ main {
     width: 32.75rem;
 }
 
-.l-banner__descricao p {    
+.l-banner__descricao p {
     font-size: 1.125rem;
     line-height: 1.25rem;
     color: var(--default-white);
@@ -142,4 +157,143 @@ main {
 
 .l-banner__sociais img {
     width: 2.1875rem;
+}
+
+.l-banner__sociais img:hover {
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+
+/*Deputados*/
+
+.c-deputados__conteudo {
+    display: flex;
+    flex-direction: column;
+    height: 37rem;
+}
+
+.l-deputados__titulo h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.6875rem;
+    color: var(--secundary-orange);
+    margin: 0;
+    text-align: center;
+}
+
+.c-deputados__listagem {
+    display: flex;
+    gap: 0.875rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c-deputados__item {
+    flex: 0 0 calc(100% / 14);
+    /* Cada item ocupará 1/11 da largura */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    text-align: center;
+    margin-top: 2.375rem;
+    cursor: pointer;
+}
+
+.c-deputados__item:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.c-deputados__item:hover img {
+    border: 0.25rem solid var(--secundary-orange);
+}
+
+.c-deputados__item:hover h3 {
+    color: var(--secundary-orange);
+}
+
+.c-deputados__item:hover p {
+    color: var(--secundary-orange);
+}
+
+.c-deputados__item img {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 4rem;
+    object-fit: cover;
+}
+
+.c-deputados__item h3 {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: var(--default-white);
+    font-weight: 700;
+    margin: 0;
+}
+
+.c-deputados__item p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--default-white);
+    margin: 0;
+}
+
+/*METODOLOGIA*/
+
+.l-metodologia__conteudo {
+    display: block;
+    height: 22.0625rem;
+}
+
+.l-metodologia__titulo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 4.6875rem;
+    margin: 0;
+    color: var(--secundary-orange);
+    text-align: left;
+}
+
+.l-metodologia__descricao p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--default-white);
+    text-align: left;
+    margin: 0;
+}
+
+/*EXPEDIENTE*/
+
+.l-expediente__conteudo {
+    display: block;
+    height: 22.0625rem;
+}
+
+.l-expediente__titulo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 4.6875rem;
+    margin: 0;
+    color: var(--secundary-orange);
+    text-align: left;
+}
+
+.l-expediente__autor h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: left;
+    color: var(--default-white);
+    margin: 0;
+}
+
+.l-expediente__autor p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: left;
+    color: var(--default-white);
+    margin: 0;
 }
