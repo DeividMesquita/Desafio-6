@@ -71,3 +71,28 @@ $.ajax({
         console.error('Erro ao buscar os dados:', error);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const url = encodeURIComponent(location.href);
+    const text = encodeURIComponent('Confira o Monitor de Bancada dos Deputados Federais do Ceará! Uma ferramenta que facilita o acesso às informações e atuações dos representantes do nosso estado no Congresso. Acompanhe, avalie e fique por dentro das atividades dos parlamentares. #Transparência #Política #Ceará');
+  
+    const socialLinks = {
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+      twitter: `https://twitter.com/intent/tweet?text=${text}&url=${url}`,
+      whatsapp: `https://api.whatsapp.com/send?text=${text}%20${url}`,
+      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
+      telegram: `https://t.me/share/url?url=${url}&text=${text}`
+    };
+  
+    const icons = document.querySelectorAll('.l-banner__sociais a');
+  
+    icons.forEach(icon => {
+      const imgAlt = icon.querySelector('img').alt.toLowerCase();
+      if (socialLinks[imgAlt]) {
+        icon.href = socialLinks[imgAlt];
+        icon.target = '_blank'; // Abrir em nova aba
+        icon.rel = 'noopener noreferrer'; // Segurança adicional
+      }
+    });
+  });
+  
