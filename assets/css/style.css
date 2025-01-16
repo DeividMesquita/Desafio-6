@@ -63,6 +63,7 @@ main {
 
 .c-header__perfil img {
     width: 1.25rem;
+    border-radius: 0.25rem;
 }
 
 .c-header__notificaçao img {
@@ -73,7 +74,7 @@ main {
 /* IMAGEM TOPO */
 
 .c-img-top {
-    background: url(/assets/img/monitor\ da\ bancada\ topo.png);
+    background-image: url(/assets/img/monitor\ da\ bancada\ topo.png);
     background-size: cover;
     background-position: center;
 }
@@ -132,7 +133,7 @@ main {
 
 .l-banner__descricao p {
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     color: var(--default-white);
     text-align: center;
 }
@@ -141,6 +142,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .l-banner__atualizado p {
@@ -152,6 +154,7 @@ main {
 }
 
 .l-banner__sociais ul {
+    margin-top: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,9 +181,9 @@ main {
 .l-deputados__titulo h1 {
     font-size: 3rem;
     font-weight: 700;
-    line-height: 4.6875rem;
+    line-height: 3.9375rem;
     color: var(--secundary-orange);
-    margin: 0;
+    margin-bottom: 1.8125rem;
     text-align: center;
 }
 
@@ -188,7 +191,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 0.875rem;
+    gap: 2.375rem 0.875rem;
     flex-wrap: wrap;
 }
 
@@ -199,7 +202,6 @@ main {
     align-items: center;
     gap: 0.625rem;
     text-align: center;
-    margin-top: 2.375rem;
     cursor: pointer;
     width: 6.25rem;
 }
@@ -226,6 +228,7 @@ main {
     height: 6.25rem;
     border-radius: 4rem;
     object-fit: cover;
+    margin-bottom: 0.625rem;
 }
 
 .c-deputados__item h3 {
@@ -364,8 +367,8 @@ main {
 .l-metodologia__titulo h1 {
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 4.6875rem;
-    margin: 0;
+    line-height: 2rem;
+    margin-bottom: 19px;
     color: var(--secundary-orange);
     text-align: left;
 }
@@ -392,8 +395,8 @@ main {
 .l-expediente__titulo h1 {
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 4.6875rem;
-    margin: 0;
+    line-height: 2rem;
+    margin-bottom: 1.1875rem;
     color: var(--secundary-orange);
     text-align: left;
 }
@@ -468,16 +471,37 @@ main {
 
 @media (max-width: 525px) {
 
+    .c-img-top {
+        background-image: url(/assets/img/monitor\ da\ bancada\ logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center 25%;
+    }
+
+    .l-banner__conteudo {
+        gap: 500px;
+        height: auto;
+    }
+
 
     .l-modal__conteudo {
         margin-top: 1rem;
     }
 
+    .c-deputados__listagem {
+        gap: 1.125rem 0.875rem;
+    }
     .l-deputados__titulo h1 {
         font-size: 2.25rem;
         line-height: 3rem;
     }
 
+}
+
+@media (max-width: 425px) {
+    .l-banner__conteudo {
+        gap: 400px;
+    }
 }
 
 @media (max-width: 375px) {
