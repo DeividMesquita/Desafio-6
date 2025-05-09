@@ -74,7 +74,7 @@ main {
 /* IMAGEM TOPO */
 
 .c-img-top {
-    background-image: url(/assets/img/monitor\ da\ bancada\ topo.png);
+    background-image: url(/assets/img/monitor-da-bancada-topo.png);
     background-size: cover;
     background-position: center;
 }
@@ -472,7 +472,7 @@ main {
 @media (max-width: 525px) {
 
     .c-img-top {
-        background-image: url(/assets/img/monitor\ da\ bancada\ logo.png);
+        background-image: url(/assets/img/monitor-da-bancada-logo.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center 25%;
